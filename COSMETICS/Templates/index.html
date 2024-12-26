@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Fortnite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% for section, items in data.items() %}
+    <div class="section">
+        <h2>Sección: {{ section }}</h2>
+        <p>Disponible hasta el: {{ items[0]['offer_end_date'] }}</p>
+        {% for item in items %}
+        <div class="item">
+            <h3>{{ item['displayName'] }}</h3>
+            <img src="{{ item['full_background'] }}" alt="Imagen del item">
+            <p>Precio(USD) = ${{ "%.2f"|format(item['price_usd']) }}</p>
+            <a href="https://wa.link/k8d5k6" target="_blank">
+                <button class="button">¡Adquiérelo ya!</button>
+            </a>
+        </div>
+        <div class="separator"></div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
+</html>

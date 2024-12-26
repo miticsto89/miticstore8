@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Burbank Big Condensed';
+    src: url('/static/burbankbigcondensed_black.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Burbank Big Condensed', sans-serif;
+    font-size: 45px; /* Tamaño de fuente aumentado */
+    background-color: #f9f9f9;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Resto del CSS */
+.section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #007BFF;
+    font-size: 45px; /* Tamaño de fuente para encabezados */
+}
+
+.item {
+    margin-bottom: 20px;
+    font-size: 40px; /* Tamaño de fuente para elementos individuales */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.button {
+    font-family: 'Burbank Big Condensed', sans-serif;
+    font-size: 45px; /* Tamaño de fuente aumentado */
+    background-color: #000000;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    background-color: #d0ff00;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px; /* Tamaño de fuente para botones */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.separator {
+    border-top: 2px dashed #ddd;
+    margin: 20px 0;
+}
